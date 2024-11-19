@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f7fc;
+            height: 100vh;
+            color: #333;
+        }
+
+        .weather-app {
+            width: 400px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search-form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px 0 0 8px;
+            outline: none;
+            font-size: 1em;
+            background-color: #f5f7fc;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #a56cc1;
+            color: #ffffff;
+            font-weight: bold;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #8b5fbf;
+        }
+
+        .current-weather {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .current-city {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .current-details {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .current-temperature {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 15px;
+        }
+
+        .current-temperature-icon {
+            font-size: 2em;
+            margin-right: 10px;
+        }
+
+        .current-temperature-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .current-temperature-unit {
+            font-size: 1.2em;
+            color: #666;
+            margin-left: 5px;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        footer a {
+            color: #a56cc1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-app">
+        <header>
+            <form class="search-form">
+                <input type="search" placeholder="Enter a city.." required class="search-input" />
+                <input type="submit" value="Search" class="search-button" />
+            </form>
+        </header>
+        <main>
+            <div class="current-weather">
+                <h1 class="current-city">Paris</h1>
+                <p class="current-details">
+                    Tuesday 07:45, moderate rain <br>
+                    Humidity: <span class="highlight">87%</span>, Wind: <span class="highlight">7.2km/h</span>
+                </p>
+                <div class="current-temperature">
+                    <span class="current-temperature-icon">☀️</span>
+                    <span class="current-temperature-value">24</span><span class="current-temperature-unit">°C</span>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                This project was coded by 
+                <a href="https://github.com/Gotez254" target="_blank">DENIS</a> and is 
+                <a href="https://github.com/Rennish/Weather-APi-Correct" target="_blank">on GitHub</a> and 
+                <a href="https://beautiful-kitten-9b7d1e.netlify.app/" target="_blank">hosted on Netlify</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
